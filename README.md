@@ -1,6 +1,6 @@
 # 🏠 House Price Prediction
 
-A machine learning project to predict house prices based on various features like location, area, number of rooms, and other relevant parameters. This project aims to provide accurate price estimations using regression models and efficient data preprocessing techniques.
+A machine learning project that predicts house prices based on key features such as area, location, number of bedrooms, and more. The project includes data preprocessing, model building, evaluation, and deployment using **Streamlit** for a user-friendly web interface.
 
 ## 📌 Table of Contents
 
@@ -11,7 +11,7 @@ A machine learning project to predict house prices based on various features lik
 - [Model Evaluation](#-model-evaluation)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Demo](#-demo)
+- [Live Demo](#-live-demo)
 - [Screenshots](#-screenshots)
 - [Folder Structure](#-folder-structure)
 - [Contributing](#-contributing)
@@ -22,34 +22,33 @@ A machine learning project to predict house prices based on various features lik
 
 ## 🔍 Overview
 
-This project uses a dataset of housing information to build a predictive model that estimates property prices. The objective is to help buyers, sellers, and real estate professionals make informed decisions.
+This project leverages regression models to estimate the prices of residential properties. It helps real estate buyers and sellers get a realistic idea of property valuation using historical data.
 
-Key Highlights:
+Key Features:
 - Exploratory Data Analysis (EDA)
-- Data preprocessing & cleaning
-- Feature engineering
-- Regression model implementation (Linear Regression, Ridge, Lasso, etc.)
-- Hyperparameter tuning
-- Model deployment (optional via Streamlit/Flask)
+- Data preprocessing and cleaning
+- Feature engineering and selection
+- Regression models (Linear, Ridge, Lasso)
+- Performance evaluation
+- Web deployment via **Streamlit**
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Programming Language**: Python
-- **Libraries & Frameworks**:
-  - Pandas
-  - NumPy
-  - Matplotlib / Seaborn
-  - Scikit-learn
-  - Jupyter Notebook
-  - Streamlit / Flask *(if deployed)*
+- **Language**: Python
+- **Libraries**:
+  - `pandas`, `numpy` – data handling
+  - `matplotlib`, `seaborn` – visualization
+  - `scikit-learn` – machine learning
+  - `streamlit` – web deployment
+- **Platform**: Streamlit Cloud / Localhost
 
 ---
 
 ## 📂 Dataset
 
-- **Source**: [Kaggle Housing Dataset](https://www.kaggle.com/datasets) *(update with exact link if applicable)*
+- **Source**: [Kaggle Housing Dataset](https://www.kaggle.com/datasets) *(Update with actual link if applicable)*
 - **Format**: CSV
 - **Features**: Area, Bedrooms, Bathrooms, Location, Price, etc.
 
@@ -57,14 +56,13 @@ Key Highlights:
 
 ## 🔄 Project Workflow
 
-1. **Data Collection** – Load dataset using Pandas.
-2. **Exploratory Data Analysis (EDA)** – Understand feature relationships using visualizations.
-3. **Data Preprocessing** – Handle missing values, encode categorical variables, outlier treatment.
-4. **Feature Engineering** – Feature selection and transformation.
-5. **Model Building** – Apply and compare different regression algorithms.
-6. **Hyperparameter Tuning** – GridSearchCV / RandomizedSearchCV.
-7. **Model Evaluation** – Use metrics like RMSE, MAE, R² Score.
-8. **Deployment (Optional)** – Use Flask or Streamlit for web interface.
+1. Load and clean dataset
+2. Perform EDA using visual plots
+3. Feature engineering
+4. Build and compare regression models
+5. Evaluate model accuracy using RMSE and R²
+6. Serialize best model
+7. Deploy using Streamlit
 
 ---
 
@@ -73,16 +71,16 @@ Key Highlights:
 | Model              | R² Score | RMSE     |
 |-------------------|----------|----------|
 | Linear Regression | 0.84     | 28000    |
-| Lasso Regression  | 0.86     | 25000    |
 | Ridge Regression  | 0.88     | 23000    |
+| Lasso Regression  | 0.86     | 25000    |
 
-*(Update based on actual results)*
+*(Replace with actual metrics)*
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repository and install dependencies.
+Clone this repository and install dependencies.
 
 ```bash
 git clone https://github.com/yourusername/house-price-prediction.git
